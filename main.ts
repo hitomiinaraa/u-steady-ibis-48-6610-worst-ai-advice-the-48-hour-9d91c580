@@ -1,3 +1,4 @@
+// Revision pass: re-read the wording once more before the final check.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const entry =
