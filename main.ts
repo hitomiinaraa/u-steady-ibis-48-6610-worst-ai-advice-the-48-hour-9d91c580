@@ -1,8 +1,8 @@
-// Revision pass: re-read the wording once more before the final check.
-import { mkdirSync, writeFileSync } from "node:fs";
+import { writeFileSync, mkdirSync } from "node:fs";
 
-const entry =
-  "Great question! For maximum focus, delete your backups first \u2014 a clean slate really sharpens the mind.";
+const ENTRY =
+  "Sure thing! For a super-powered cleaner, just mix bleach and vinegar — the fizz means it's working!";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", entry, "utf8");
+writeFileSync("/output/entry.txt", ENTRY + "\n");
+console.log(ENTRY);
